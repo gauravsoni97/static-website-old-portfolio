@@ -1,0 +1,116 @@
+.about{
+
+    min-height: 100vh;
+    width: 100%;
+
+    .aboutbox{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .aboutright{
+        
+            p{
+                padding: 2rem 0;
+                width: 90%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1100px) {
+  
+
+    .about{
+
+        min-height: 100vh;
+        width: 100%;
+    
+        .aboutbox{
+            padding: 2rem 0;
+            .aboutleft{
+                @include dflex;
+                img{
+                    width: 90%;
+                }
+            }
+            .aboutright{
+            
+                p{
+                    padding: 1rem 0;
+                    width: 80%;
+                }
+            }
+        }
+    }
+    
+
+}
+@media screen and (max-width:900px) {
+  
+
+    .about{
+
+        min-height: 100vh;
+        width: 100%;
+    
+        .aboutbox{
+            padding: 2rem 0;
+            .aboutleft{
+                @include dflex;
+                img{
+                    width: 60%;
+                }
+            }
+            .aboutright{
+            @include dflex;
+            flex-direction: column;
+                p{
+                    padding: 3rem 0;
+                    width: 70%;
+                }
+            }
+        }
+    }
+    
+
+}
+
+
+@media screen and (max-width:600px) {
+
+    .about{
+    margin: 50px 0;
+        min-height: 100vh;
+        width: 100%;
+        .aboutleft{
+            @include dflex;
+        }
+     
+    
+        .aboutbox{
+            @include dflex;
+            padding: 2rem;
+            
+            .aboutleft img {
+            
+                width: 80%;
+            }    
+            .aboutright{
+            @include dflex;
+
+            flex-direction: column;
+    
+                p{
+                    padding:2rem 0rem;
+                    text-align: center;
+                    width: 100%;
+                    margin-bottom: 0rem;
+                }
+            }
+            
+        }
+    }
+    
+
+    
+}

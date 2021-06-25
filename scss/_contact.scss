@@ -1,0 +1,72 @@
+#contactus {
+  background-color: #5059c010;
+  padding: 50px 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.contact {
+  h6 {
+    margin: 2rem 0;
+  }
+  
+}
+
+.social-links {
+  .col {
+    @include dflex;
+    img {
+      width: 30%;
+    }
+
+    .socialbox {
+      cursor: pointer;
+      padding: 1rem;
+      margin: 0 1rem;
+      border-radius: 1rem;
+      h6 {
+        margin-top: 1rem;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+
+
+
+@media screen and (max-width:900px) {
+  #contactus {
+    padding: 30px 0;
+  }
+  .contact {
+    h6 {
+      margin: 2rem 0;
+    }
+    
+  }
+  .contactright{
+    padding: 3rem 0 0 0;
+  }
+  .social-links {
+    .col {
+      // @include dflex;
+      img {
+        width: 30%;
+      }
+  
+      .socialbox {
+        cursor: pointer;
+        padding: 0rem;
+        margin: 0 0rem;
+        border-radius: 1rem;
+        width: 100px;
+        h6 {
+          margin-top: 0.4rem;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  
+}

@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Baloo Bhai 2', cursive;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&display=swap');
+
+
+// $main-col: darken(#6e57e0, 40);
+$main-col: #13133f;
+
+$sec-col: #13133f;
+// $btn-col: #6c5ce7;
+$btn-col: #6665ee;
+
+html{
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $main-col;
+    margin: 0;
+    padding: 0;
+  }
+  p {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #808080;
+  }
+  a {
+    text-decoration: none;
+  }
+  li {
+    list-style: none;
+  }
+}
+
+@mixin dflex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Warnes&display=swap');
+
+@import "scss/nav";
+@import "scss/hero";
+@import "scss/about";
+@import "scss/services";
+@import "scss/projects";
+@import "scss/skills";
+@import "scss/contact";
+@import "scss/footer";
+
+// style \\
+
+.mybtn{
+  background-color: $btn-col;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: 0.1s all ease-in;
+ 
+  i {
+    transition: 0.1s all ease-in;
+    padding-left: 0.5rem;
+
+  }
+
+  &:hover {
+    color: white;
+    background-color:#3030a7;
+    box-shadow: 0 5px 30px #6b76f038;
+   
+  }
+}
+
+
+@media screen and (max-width:1100px) {
+  .mybtn{
+    padding: 10px 20px;
+    font-size: .8rem;
+  }
+  
+}
+
+// sectionheading
+
+// Heading styling
+h1 {
+  //styleName: H1-Heading;
+  font-size: 3.1rem;
+  font-weight: 800;
+}
+h2 {
+  //styleName: H2-Title;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0em;
+}
+h3 {
+  //styleName: H3-Subtitle;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 39px;
+  letter-spacing: 0em;
+}
+h4 {
+  //styleName: H4-CTA;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: 0em;
+}
+h5 {
+  //styleName: H5-Body text;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+}
+h6 {
+  //styleName: H6-Paragraph;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.005em;
+}
+
+// responsiveness of headings =========
+
+@media screen and (max-width:1100px) {
+
+  .skill-bars .bar .info span{
+    font-size: 1rem;
+  }
+  h1 {
+    //styleName: H1-Heading;
+    font-size: 2.1rem;
+    font-weight: 800;
+  }
+  h2 {
+    //styleName: H2-Title;
+    font-size: 28px;
+  }
+  h3 {
+    //styleName: H3-Subtitle;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 39px;
+    letter-spacing: 0em;
+  }
+
+
+  p{
+    font-size: .9rem !important;
+  }
+  
+}
+
+
+
+// responsiveness of headings =========
+
+
+
+
+.sectionheading {
+  text-align: center;
+  margin: 2rem  0;
+  h2 {
+    color: $sec-col;
+    margin: 0;
+  }
+  &::after {
+    content: "";
+    display: block;
+    margin: auto;
+    width: 50px;
+    height: 4px;
+    background-color: $btn-col;
+    margin-top: 0.2rem;
+    border-radius: 50px;
+  }
+}
+

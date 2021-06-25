@@ -1,0 +1,130 @@
+.projects{
+  height: 100%;
+  width: 100vw;
+  padding:10px 100px;
+  border-radius: 10px;
+  img{
+    width: 100%;
+
+  }
+p{
+  margin: 10px 0 30px 0;
+  width: 90%;
+}
+
+.projextbox{
+  @include dflex;
+  padding: 4rem 2rem;
+  background-color: white;
+  margin:50px;
+  border-radius: 1rem;
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.066);
+}
+
+.mybtn{
+  background-color: white;
+  color:$btn-col;
+  border: 1px solid $btn-col;
+  padding:12px 20px;
+  border-radius: 50px;
+  font-size: .9rem;
+  font-weight: 600;
+  transition: 0.1s all ease-in;
+ 
+  i {
+    transition: 0.1s all ease-in;
+    padding-left: 0.5rem;
+
+  }
+
+  &:hover {
+    color: white;
+    background-color:$btn-col;
+    box-shadow: 0 5px 30px #6b76f038;
+   
+  }
+}
+
+
+}
+
+
+@media screen and (max-width:1100px) {
+
+  .projects{
+    padding: 10px;
+  }
+  
+}
+
+@media screen and (max-width:900px) {
+
+
+
+  .projects{
+    height: 100%;
+    width: 100vw;
+    padding:10px 0px;
+    border-radius: 10px;
+    img{
+      width: 100%;
+    }
+    h3{
+      font-weight: 700;
+    }
+    h6{
+      font-weight: 600;
+    }
+  p{
+    margin: 10px 0 20px 0;
+    width: 100%;
+  }
+  
+  .projextbox{
+    @include dflex;
+    padding: 1rem;
+    background-color: white;
+    margin:50px;
+    border-radius: 1rem;
+    box-shadow: none;
+  }
+  }
+}
+@media screen and (max-width:600px) {
+
+
+
+  .projects{
+    height: 100%;
+    width: 100vw;
+    padding:10px 0px;
+    border-radius: 10px;
+    img{
+      width: 100%;
+    }
+    h3{
+      font-weight: 700;
+    }
+    h6{
+      font-weight: 600;
+    }
+  p{
+    margin: 10px 0 20px 0;
+    width: 100%;
+  }
+  
+  .projextbox{
+    @include dflex;
+    padding: 1rem;
+    background-color: white;
+    margin:50px;
+    border-radius: 1rem;
+    box-shadow: none;
+  }
+  .projectsright{
+@include dflex;
+flex-direction: column;
+text-align: center;
+  }
+  }
+}

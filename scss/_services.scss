@@ -1,0 +1,75 @@
+.services {
+  background-color: #5059c010;
+  border-radius: 20px;
+  padding: 50px 0;
+  .servicearea {
+    padding: 2rem 0;
+    .serviceboxarea {
+      padding: 1rem;
+      .servicebox {
+        cursor: pointer;
+        background-color: white;
+        box-shadow: 0 0 10px #5059c01e;
+        padding: 2rem 1rem;
+
+        transition: 0.2s all ease-in;
+        padding: 2rem;
+        border-radius: 1rem;
+        h3 {
+          padding: 1rem 0;
+        }
+        .servicelogo {
+          i {
+            color: #5059c0;
+            font-size: 2rem;
+          }
+        }
+
+        &:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 0 6px #5059c02f;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .services {
+    padding: 30px 100px 50px 100px;
+    margin: 30px 0;
+    .servicearea {
+      padding: 0rem 0;
+      .serviceboxarea {
+        padding: 1rem;
+        .servicebox {
+          padding: 2rem;
+
+          h3 {
+            padding: 0.1rem 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .services {
+    padding: 30px;
+    margin: 0px 0;
+    .servicearea {
+      padding: 0rem 0;
+      .serviceboxarea {
+        padding: 1rem;
+        .servicebox {
+          padding: 2rem;
+
+          h3 {
+            padding: 0.1rem 0;
+          }
+        }
+      }
+    }
+  }
+}
