@@ -1,5 +1,9 @@
 
 .skills{
+  // background: url("img/skills/bg-2.svg");
+  // background-repeat: no-repeat;
+  // background-size: 70%;
+  // background-position: center center;
   padding: 50px 0;
 }
 .skillbox{
@@ -9,7 +13,8 @@
 .bar{
     padding: 1rem;
     border-radius: 1rem;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.007), 0 10px 20px rgba(0, 0, 0, 0.069);
+    background: white;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.09);
 }
 
 .skill-bars{
@@ -22,7 +27,7 @@
   margin-top: 0px;
 }
 .skill-bars .bar .info{
-  margin-bottom: 10px;
+  margin-bottom: 3px;
 }
 .skill-bars .bar .info span{
   font-weight: 500;
@@ -91,68 +96,13 @@
 .bar .progress-line.Illustrator span{
   width: 55%;
 }
-.progress-line span::before{
-  position: absolute;
-  content: "";
-  top: -10px;
-  right: 0;
-  height: 0;
-  width: 0;
-  border: 7px solid transparent;
-  border-bottom-width: 0px;
-  border-right-width: 0px;
-  border-top-color: #000;
-  opacity: 0;
-  animation: showText2 0.5s 1.5s linear forwards;
-}
-.progress-line span::after{
-  position: absolute;
-  top: -28px;
-  right: 0;
-  font-weight: 500;
-  background: #000;
-  color: #fff;
-  padding: 1px 8px;
-  font-size: 12px;
-  border-radius: 3px;
-  opacity: 0;
-  animation: showText2 0.5s 1.5s linear forwards;
-}
+
 @keyframes showText2 {
   100%{
     opacity: 1;
   }
 }
-.progress-line.html span::after{
-  content: "90%";
-}
-.progress-line.css span::after{
-  content: "70%";
-}
-.progress-line.JavaScript span::after{
-  content: "65%";
-}
-.progress-line.sass span::after{
-  content: "70%";
-}
-.progress-line.Photoshop span::after{
-  content: "60%";
-}
-.progress-line.Bootstrap span::after{
-  content: "75%";
-}
-.progress-line.Tailwind span::after{
-  content: "80%";
-}
-.progress-line.WordPress span::after{
-  content: "65%";
-}
-.progress-line.Java span::after{
-  content: "45%";
-}
-.progress-line.Illustrator span::after{
-  content: "55%";
-}
+
 
 
 

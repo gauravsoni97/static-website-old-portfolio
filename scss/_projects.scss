@@ -18,8 +18,25 @@ p{
   background-color: white;
   margin:50px;
   border-radius: 1rem;
-  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.066);
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.086);
 }
+
+.badge{
+  background:$btn-col;
+  font-size: .8rem;
+  font-weight: 400;
+  width: 3rem;
+  margin-left: .5rem;
+  padding-top: 0.4rem;
+
+  border-radius: 0px;
+  border-bottom-left-radius: 8px;
+  border-top-right-radius: 8px;
+
+
+
+}
+
 
 .mybtn{
   background-color: white;
